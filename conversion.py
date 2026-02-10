@@ -47,7 +47,7 @@ def _parse_num_string(num_string):
     return (True, sign, int_digits, frac_digits)
 
 
-
+# Conversion functions for characteristic and mantissa
 def characteristic(num_string):
     """
     Extracts the characteristic (integer part) from a number string.
@@ -57,7 +57,6 @@ def characteristic(num_string):
         return (False, 0)
 
     return (True, sign * int(int_digits))
-
 
 
 def mantissa(num_string):
